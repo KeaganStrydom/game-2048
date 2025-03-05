@@ -1,0 +1,71 @@
+
+* {
+    text-align: center;
+}
+
+body {
+   background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("./resources/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #474787;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.info-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(3, 1fr);
+    
+    width: 100%;
+    padding-bottom: 1rem;
+
+    align-items: center;
+    justify-content:space-between;
+}
+
+.info-item {
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    background-color: #ECECEC;
+}
+
+
+.score {
+    grid-column: 2;
+}
+
+.best {
+    grid-column: 3;
+}
+
+.placeholder-grid {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 0.5rem;
+}
+
+.placeholder-tile {
+    background-color: #ECECEC;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.bordered {
+    border-radius: 0.5rem;
+}
