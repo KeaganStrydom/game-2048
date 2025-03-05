@@ -3,6 +3,7 @@
 
 * {
     --gap: 2vmin;
+    --border-rad: 2vmin;
     text-align: center;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -58,11 +59,7 @@ body {
     grid-column: 3;
 }
 
-.grid {
-    --size: 4;
-    --cell-size: 10vmin;
-    --grid-gap: 2vmin;
-    --border-rad: 2vmin;
+#grid {
     display: grid;
     box-sizing: border-box;
     background-color: #474787;
