@@ -41,6 +41,13 @@ class Cell {
     get tile() {
         return this.#tile
     }
+
+    set title(value) {
+        this.#tile = value
+        if (value === null) return
+        this.#tile.x = this.#x
+        this.#tile.y = this.#y
+    }
 }
 
 function makeCells(grid) {
