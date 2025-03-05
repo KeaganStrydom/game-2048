@@ -17,11 +17,11 @@ export default class Grid {
     }
 
     get #openCells() {
-        return this.#cells.filter(cell => cell.tile == null)
+        return this.#cells.filter(cell => cell.tile === null)
     }
 
-    randomOpenCell() {
-        const randomIndex = Math.floor(Math.random * this.#openCells.length)
+    randomOpenCell() {        
+        const randomIndex = Math.floor(Math.random() * this.#openCells.length)
         return this.#openCells[randomIndex]
     }
 }
